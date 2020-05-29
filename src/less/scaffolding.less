@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'ibm_plex_sanssemibold';
+    src: url('../fonts/ibmplexsans-semibold-webfont.woff2') format('woff2'),
+         url('../ibmplexsans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ibm_plex_sansregular';
+    src: url('../fonts/ibmplexsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/ibmplexsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+
+    font-family: 'ibm_plex_sansregular', Arial, sans-serif;
+
+	font-size: 14px;
+	line-height: 18px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+  	height: 1px;
+  	margin: -1px;
+  	border: 0;
+  	padding: 0;
+
+  	white-space: nowrap;
+
+  	clip-path: inset(100%);
+  	clip: rect(0 0 0 0);
+  	overflow: hidden;
+}

@@ -1,0 +1,112 @@
+.feedback {
+    padding: 15px;
+}
+
+.feedback__wrapper {
+    border-radius: 8px;
+    border: 1px solid #00B4F0;
+}
+
+.feedback__description {
+    position: relative;
+
+    padding: 10px;
+    padding-top: 60px;
+
+    text-align: center;
+
+    background-color: #00B4F0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 10px;
+        left: 15px;
+
+        width: 40px;
+        height: 40px;
+
+        background-image: url(../img/smartphone.png);
+        background-size: 40px 40px;
+    }
+}
+
+.feedback__text--bold {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.feedback__text {
+    font-size: 10px;
+    line-height: 14px;
+
+    color: #fff;
+}
+
+form {
+    padding: 15px;
+}
+
+.form__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.form__label {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+
+    & input {
+        display: block;
+        width: 100%;
+
+        margin-top: 5px;
+        padding: 10px 5px;
+
+        border-radius: 6px;
+        border: 1px solid #ccc;
+
+        box-sizing: border-box;
+    }
+}
+
+.form__optional {
+    display: inline-block;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.send-form__btn {
+    display: inline-block;
+    width: 260px;
+    padding: 10px 15px;
+    margin: 0 auto;
+
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background-color: #0D870D;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+}
