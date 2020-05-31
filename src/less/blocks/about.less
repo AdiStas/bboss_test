@@ -8,6 +8,7 @@
     margin: 0;
     margin-bottom: 30px;
 
+    font-family: 'ibm_plex_sanssemibold';
     font-size: 36px;
     line-height: 34px;
 
@@ -15,23 +16,20 @@
 }
 
 .about__text--bold {
-    display: block;
-
-    margin-bottom: 30px;
-
-    font-size: 16px;
-    line-height: 24px;
-
-    color: #fff;
+    font-family: 'ibm_plex_sanssemibold';
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .about__text {
+    display: block;
+
     margin: 0;
 
     margin-bottom: 30px;
 
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 24px;
 
     color: #fff;
 }
@@ -39,7 +37,7 @@
 .about__text--bottom {
     position: relative;
 
-    padding-top: 60px;
+    padding-top: 80px;
 
     &::before {
         content: '';
@@ -50,14 +48,125 @@
 
         margin-top: 10px;
         
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
 
         background-image: url(../img/team_logo.png);
-        background-size: 40px 40px;
+        background-size: 60px 60px;
     }
 }
 
 hr {
     margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+    .about {
+        padding: 30px;
+    }
+
+    .main-title {
+        font-size: 50px;
+        line-height: 52px;
+    }
+
+    .about__text--bold {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .about__text--bottom {
+        padding-top: 120px;
+    
+        &::before {
+            margin-top: 20px;
+            
+            width: 80px;
+            height: 80px;
+
+            background-size: 80px 80px;
+        }
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .about {
+        padding: 30px;
+    }
+
+    .main-title {
+        font-size: 90px;
+        line-height: 117px;
+    }
+
+    .about__content {
+        position: relative;
+
+        padding-right: 50%;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            width: 400px;
+            height: 400px;
+
+            background-image: url(../img/team1.png);
+            background-size: 400px;
+        }
+    }
+
+    .about__text {
+        margin-bottom: 40px;
+    }
+
+    .about__text--top {
+        line-height: 29px;
+    }
+
+    .about__text--bottom {
+        padding-top: 160px;
+
+        line-height: 29px;
+    
+        &::before {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .about__content {
+        &::before {
+            width: 500px;
+            height: 500px;
+
+            background-size: 500px;
+        }
+    }
+}
+
+@media (min-width: @desktop-large-width) {
+    .about {
+        padding: 80px 0 60px;
+    }
+
+    .main-title {
+        margin-bottom: 45px;
+    }
+
+    .about__content {
+        &::before {
+            top: -70px;
+            right: -185px;
+
+            width: 701px;
+            height: 701px;
+
+            background-size: 701px;
+        }
+    }
 }

@@ -11,6 +11,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    & .main-logo__container:hover .main-logo--img {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
 }
 
 .main-logo__container {
@@ -21,6 +25,8 @@
 
 .main-logo--img {
     margin-right: 20px;
+
+    transition: transform 1s;
 }
 
 .main-logo--text {
@@ -117,21 +123,110 @@
     transform: translate(0);
 }
 
+.main-nav__item--header { 
+    margin: 0 0 0 20px;
+}
+
 .main-nav__item {
+
     & a {   
-        display: block;
-        padding: 12px;
+        display: inline-block;
+        padding: 12px 0;
         font-size: 16px;
         line-height: 21px;
 
         color: #fff;
         text-decoration: none;
+
+        transition: opacity .3s;
+
+        &:hover,
+        &:focus {
+            opacity: .5;
+        }
+
+        &:active {
+            opacity: .1;
+        }
     }
 }
 
 .main-nav__item--active {
 
     & a {
-        color: #505050;
+        position: relative;
+
+        color: #fff;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            height: 1px;
+            width: 100%;
+
+            background-color: #fff;
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .header__nav {
+        padding: 30px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .header__nav {
+        padding: 30px;
+    }
+    
+    .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav__list--hidden {
+        visibility: visible;
+        transform: translateX(0%);
+    }
+
+    .main-nav__list--header {
+        position: static;
+
+        display: flex;
+        align-items: center;
+        
+        width: auto;
+        height: auto;
+    }
+
+    .main-nav__item--active {
+
+        & a {
+            &::before {
+                bottom: -25px;
+
+                height: 4px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .header__nav {
+        padding: 30px 0;
+    }
+}
+
+@media (min-width: @desktop-large-width) {
+    .header__nav {
+        padding: 60px 0 40px;
+    }
+
+    .main-nav__item--header {
+        margin-left: 30px;
     }
 }

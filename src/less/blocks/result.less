@@ -1,7 +1,32 @@
 .result {
-    padding: 15px;
+    position: relative;
+
+    padding: 30px 15px;
+    margin-bottom: 30px;
 
     background-color: #eceef2;
+}
+
+.result__content {
+    position: relative;
+
+    padding-top: 330px;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        width: 290px;
+        height: 290px;
+    
+        background-image: url(../img/team2.png);
+        background-size: 290px;
+
+        transform: translate(-50%);
+    }
 }
 
 .result__head {
@@ -9,13 +34,89 @@
 
     margin-bottom: 20px;
 
-    font-size: 30px;
-    line-height: 34px;
+    font-family: 'ibm_plex_sanssemibold';
+    font-size: 34px;
+    line-height: 38px;
 }
 
 .result__text {
     margin: 0;
 
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@media (min-width: @tablet-width) {
+   .result {
+       padding: 30px;
+   }
+}
+
+@media (min-width: @desktop-width) {
+    .result {
+        min-height: 400px;
+
+        padding: 30px;
+        margin-bottom: 80px;
+    }
+
+    .result__content {
+        padding-top: 0;
+        padding-left: 50%;
+
+        &::before {
+            left: 0;
+
+            width: 400px;
+            height: 400px;
+
+            background-size: 400px;
+
+            transform: translate(0);
+        }
+    }
+
+    .result__head {
+        font-size: 44px;
+        line-height: 66px;
+    }
+
+    .result__text {
+        font-size: 18px;
+        line-height: 29px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .result {
+        padding-top: 130px;
+
+        min-height: 400px;
+    }
+
+    .result__content {
+
+        &::before {
+            top: -100px;
+
+            width: 496px;
+            height: 496px;
+
+            background-size: 496px;
+        }
+    }
+}
+
+@media (min-width: @desktop-large-width) {
+    .result {
+       padding: 177px 0 75px;
+    }
+
+    .result__content {
+        padding-left: 56%;
+
+        &::before {
+            top: -100px;
+        }
+    }
 }

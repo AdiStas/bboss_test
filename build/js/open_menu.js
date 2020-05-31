@@ -3,7 +3,6 @@
 const toggleBtn = document.querySelector('.main-nav__toggle');
 const mainNav = document.querySelector('.main-nav');
 const mainNavList = document.querySelector('.main-nav__list');
-const mainNavLinks = mainNavList.querySelectorAll('a');
 
 const menuToggle = () => {
     mainNav.classList.toggle('main-nav--opened');

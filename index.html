@@ -6,122 +6,167 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>test</title>
     <link rel="preload" href="build/fonts/ibmplexsans-regular-webfont.woff2" as="font">
-	<link rel="preload" href="build/fonts/ibmplexsans-semibold-webfont.woff2" as="font">
+    <link rel="preload" href="build/fonts/ibmplexsans-semibold-webfont.woff2" as="font">
     <link rel="stylesheet" href="build/css/style.css">
 </head>
 
 <body>
     <header class="main-header">
-        <nav class="main-nav header__nav main-nav--closed">
-            <a class="main-logo__container" href="#">
-                <img class="main-logo--img" src="build/img/main_logo.svg">
-                <span class="main-logo--text">bboss.io</span>
-            </a>
-            <button class="main-nav__toggle" type="button">
-                <span class="visually-hidden toggle__text">Menu</span>
-            </button>
-            <ul class="main-nav__list main-nav__list--header main-nav__list--hidden">
-                <li class="main-nav__item main-nav__item--header"><a href="#">About</a></li>
-                <li class="main-nav__item main-nav__item--header"><a href="#">Services</a></li>
-                <li class="main-nav__item main-nav__item--header"><a href="#">Skills</a></li>
-                <li class="main-nav__item main-nav__item--header"><a href="#">Team as a service</a></li>
-                <li class="main-nav__item main-nav__item--header"><a href="#">Industries</a></li>
-                <li class="main-nav__item main-nav__item--header"><a href="#">Case studies</a></li>
-                <li class="main-nav__item main-nav__item--header main-nav__item--active"><a href="#">Approach</a></li>
-                <li class="main-nav__item main-nav__item--header"><a href="#">Blog</a></li>
-                <li class="main-nav__item main-nav__item--header"><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
+        <div class="page-container">
+            <nav class="main-nav header__nav main-nav--closed">
+                <a class="main-logo__container" href="#">
+                    <img class="main-logo--img" src="build/img/main_logo.svg" alt="main-logo">
+                    <span class="main-logo--text">bboss.io</span>
+                </a>
+                <button class="main-nav__toggle" type="button">
+                    <span class="visually-hidden toggle__text">Menu</span>
+                </button>
+                <ul class="main-nav__list main-nav__list--header main-nav__list--hidden">
+                    <li class="main-nav__item main-nav__item--header"><a href="#">About</a></li>
+                    <li class="main-nav__item main-nav__item--header"><a href="#">Services</a></li>
+                    <li class="main-nav__item main-nav__item--header"><a href="#">Skills</a></li>
+                    <li class="main-nav__item main-nav__item--header"><a href="#">Team as a service</a></li>
+                    <li class="main-nav__item main-nav__item--header"><a href="#">Industries</a></li>
+                    <li class="main-nav__item main-nav__item--header"><a href="#">Case studies</a></li>
+                    <li class="main-nav__item main-nav__item--header main-nav__item--active"><a href="#">Approach</a>
+                    </li>
+                    <li class="main-nav__item main-nav__item--header"><a href="#">Blog</a></li>
+                    <li class="main-nav__item main-nav__item--header"><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main class="page-main">
         <section class="about">
-            <h1 class="main-title">Approach</h1>
-            <b class="about__text--bold">A crucial feature of our approach is the perception of the client's business as our own.</b>
-            <p class="about__text about__text--top">We do not just execute IT development according to the technical requirements - since our team not only has programmers but also experienced marketing specialists, product, and analytics managers.  We are ready to understand all the needs fully, delve into each client's business, and offer a solution as profitable as possible in terms of cost and timing.</p>
-            <hr/>
-            <p class="about__text about__text--bottom">Our developers are always on the "crest of the wave." We adhere to the policy of using only the most effective IT methodologies and modern technologies.</p>
+            <div class="page-container">
+                <div class="about__content">
+                    <h1 class="main-title">Approach</h1>
+                    <b class="about__text about__text--bold">A crucial feature of our approach is the perception of the
+                        client's
+                        business as our own.</b>
+                    <p class="about__text about__text--top">We do not just execute IT development according to the
+                        technical requirements - since our team not only has programmers but also experienced marketing
+                        specialists, product, and analytics managers. We are ready to understand all the needs fully,
+                        delve into each client's business, and offer a solution as profitable as possible in terms of
+                        cost and timing.</p>
+                    <hr />
+                    <p class="about__text about__text--bottom">Our developers are always on the "crest of the wave." We
+                        adhere to the policy of using only the most effective IT methodologies and modern technologies.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section class="result">
             <h2 class="visually-hidden">Result</h2>
-            <b class="result__head">The result — what is important</b>
-            <p class="result__text">Each of our employees feels personal responsibility for the result of his actions - and the final result, in the first place, we consider not the satisfaction of our client, but the user experience that the customers of our client receive from using the solutions developed by us.
-            </p>
+            <div class="page-container">
+                <div class="result__content">
+                    <b class="result__head">The result —<br />what is important</b>
+                    <p class="result__text">Each of our employees feels personal responsibility for the result of his
+                        actions - and the final result, in the first place, we consider not the satisfaction of our
+                        client, but the user experience that the customers of our client receive from using the
+                        solutions developed by us.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section class="features">
-            <h2 class="visually-hidden">Features</h2>
-            <p class="features__description">Therefore, in development, we abide by the principle of triple control - any solution passes three stages of testing before it reaches the customer and production:
-            </p>
-            <ul class="features__list">
-                <li class="features__item">
-                    <div class="features-item__number">
-                        <span>1</span>
-                    </div>
-                    <h3 class="features-item__title">The developer himself</h3>
-                    <p class="features-item__text">Each developer necessarily performs automatic tests for any element of the application that he creates</p>
-                </li>
-                <li class="features__item">
-                    <div class="features-item__number">
-                        <span>2</span>
-                    </div>
-                    <h3 class="features-item__title">The testing department</h3>
-                    <p class="features-item__text">Testers verify the application for compliance with the technical specifications and the correct operation of all implemented functionality</p>
-                </li>
-                <li class="features__item">
-                    <div class="features-item__number">
-                        <span>3</span>
-                    </div>
-                    <h3 class="features-item__title">Employees of other departments</h3>
-                    <p class="features-item__text">We believe that the most effective testing is by third-party users, as they can see and point out all the obscure parts and difficulties during their first-time experience</p>
-                </li>
-            </ul>
+       <section class="features">
+            <div class="page-container">
+                <h2 class="visually-hidden">Features</h2>
+
+                <p class="features__description">Therefore, in development, we abide by the principle of triple control
+                    - any solution passes three stages of testing before it reaches the customer and production:
+                </p>
+                <ul class="features__list">
+                    <li class="features__item">
+                        <div class="features-item__number">
+                            <span>1</span>
+                        </div>
+                        <div class="features-item__content">
+                            <h3 class="features-item__title">The developer himself</h3>
+                            <p class="features-item__text">Each developer necessarily performs automatic tests for any
+                            element of the application that he creates</p>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features-item__number">
+                            <span>2</span>
+                        </div>
+                        <div class="features-item__content">
+                            <h3 class="features-item__title">The testing department</h3>
+                            <p class="features-item__text">Testers verify the application for compliance with the technical
+                            specifications and the correct operation of all implemented functionality</p>
+                        </div>
+                    </li>
+                    <li class="features__item">
+                        <div class="features-item__number">
+                            <span>3</span>
+                        </div>
+                        <div class="features-item__content">
+                            <h3 class="features-item__title">Employees of other departments</h3>
+                            <p class="features-item__text">We believe that the most effective testing is by third-party
+                            users, as they can see and point out all the obscure parts and difficulties during their
+                            first-time experience</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="feedback">
-            <h2 class="visually-hidden">Feedbacks</h2>
-            <div class="feedback__wrapper">
-                <div class="feedback__description">
-                    <b class="feedback__text--bold">Our team has more than 30 experienced members who are ready to start executing their mission tomorrow if needed</b>
-                    <p class="feedback__text">Send us a request, and we will contact you within 24 hours to discuss how we can improve your business.</p>
+            <div class="page-container">
+                <h2 class="visually-hidden">Feedbacks</h2>
+                <div class="feedback__wrapper">
+                    <div class="feedback__description">
+                        <b class="feedback__text--bold">Our team has more than 30 experienced members who are ready to
+                            start executing their mission tomorrow if needed</b>
+                        <p class="feedback__text">Send us a request, and we will contact you within 24 hours to discuss
+                            how we can improve your business.</p>
+                    </div>
+                    <form action="#" method="POST">
+                        <h3 class="form__title">Call request</h3>
+                        <label for="name" class="form__label form__name">Name
+                            <input id="name" type="text" name="name" placeholder="Mark">
+                        </label>
+                        <label for="tel" class="form__label form__phone">Phone
+                            <input id="tel" type="tel" name="tel">
+                        </label>
+                        <label for="email" class="form__label form__email">Email <span
+                                class="form__optional">Optional</span>
+                            <input id="email" type="email" name="email">
+                        </label>
+                        <button class="send-form__btn">Send request</button>
+                    </form>
                 </div>
-                <form action="#" method="POST">
-                    <h3 class="form__title">Call request</h3>
-                    <label for="name" class="form__label form__name">Name
-                        <input id="name" type="text" name="name" placeholder="Mark">
-                    </label>
-                    <label for="phone" class="form__label form__phone">Phone
-                        <input id="tel" type="tel" name="tel">
-                    </label>
-                    <label for="email" class="form__label form__email">Email <span class="form__optional">Optional</span>
-                        <input id="email" type="email" name="email">
-                    </label>
-                    <button class="send-form__btn">Send request</button>
-                </form>
             </div>
         </section>
     </main>
 
     <footer role="contentinfo" class="page-footer">
-        <nav class="main-nav footer__nav">
-            <a class="main-logo__container" href="#">
-                <img class="main-logo--img" src="build/img/main_logo.svg">
-                <span class="main-logo--text">bboss.io</span>
-            </a>
-            <ul class="main-nav__list footer__nav-list">
-                <li class="main-nav__item main-nav__item--footer"><a href="#">About</a></li>
-                <li class="main-nav__item main-nav__item--footer"><a href="#">Services</a></li>
-                <li class="main-nav__item main-nav__item--footer"><a href="#">Skills</a></li>
-                <li class="main-nav__item main-nav__item--footer"><a href="#">Team as a service</a></li>
-                <li class="main-nav__item main-nav__item--footer"><a href="#">Industries</a></li>
-                <li class="main-nav__item main-nav__item--footer"><a href="#">Case studies</a></li>
-                <li class="main-nav__item main-nav__item--footer"><a href="#">Approach</a></li>
-                <li class="main-nav__item main-nav__item--footer"><a href="#">Contacts</a></li>
-            </ul>
-            <p class="footer__copyright">© bboss.io 2020</p>
-        </nav>
+        <div class="page-container">
+            <nav class="main-nav footer__nav">
+                <a class="main-logo__container" href="#">
+                    <img class="main-logo--img" src="build/img/main_logo.svg" alt="main-logo">
+                    <span class="main-logo--text">bboss.io</span>
+                </a>
+                <ul class="main-nav__list footer__nav-list">
+                    <li class="main-nav__item main-nav__item--footer"><a href="#">About</a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#">Services</a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#">Skills</a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#">Team as a service</a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#">Industries</a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#">Case studies</a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#">Approach</a></li>
+                    <li class="main-nav__item main-nav__item--footer"><a href="#">Contacts</a></li>
+                </ul>
+                <p class="footer__copyright">© bboss.io 2020</p>
+            </nav>
+        </div>
     </footer>
 
     <script src="build/js/open_menu.js"></script>
 </body>
+
 </html>
