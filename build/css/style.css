@@ -921,10 +921,9 @@ form {
   font-weight: normal;
 }
 .send-form__btn {
-  display: inline-block;
-  width: 260px;
+  display: block;
+  width: 100%;
   padding: 14px 15px;
-  margin: 0 auto;
   font-family: Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -1022,9 +1021,6 @@ form {
     margin-bottom: 25px;
     font-size: 28px;
     line-height: 42px;
-  }
-  .send-form__btn {
-    width: 100%;
   }
 }
 @media (min-width: 1280px) {
